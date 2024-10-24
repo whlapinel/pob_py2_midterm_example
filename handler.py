@@ -111,7 +111,7 @@ class InputHandler:
         exit()
 
     def render(self):
-        print(self.menu)
+        self.menu.render()
 
     def handle_input(self):
         self.menu.exec_input()

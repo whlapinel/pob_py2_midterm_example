@@ -31,3 +31,6 @@ class Menu:
                 option.execute()
                 return
         self.exec_input()
+
+    def render(self):
+        print(self)

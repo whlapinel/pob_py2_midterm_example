@@ -45,11 +45,11 @@ class StudentRepo:
             list[Student]: A list of Student objects.
         """
         sql = """
-        SELECT * FROM students where name = ?
+        SELECT * FROM students where name LIKE ?
         """
         try:
             cursor = self.conn.cursor()
-            args = (name,)
+            args = (f"%{name}%",)
             cursor.execute(sql, args)
             self.conn.commit()
             rows = cursor.fetchall()
