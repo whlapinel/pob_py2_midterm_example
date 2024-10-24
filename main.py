@@ -1,8 +1,4 @@
-import sqlite3
-import colorful
-from menu import Menu, Option
 from student_repo import StudentRepo
-from student import Student
 from handler import InputHandler
 
 
